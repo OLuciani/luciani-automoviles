@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <%- include("./partials/head") %> 
+        
+       <!--  <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/CSS/index.css">
+        <link rel="stylesheet" href="/CSS/normailize.css">
+        <link rel="stylesheet" href="/CSS/productsEdit.css">    
+        <script src="https://kit.fontawesome.com/51cbd52192.js" crossorigin="anonymous"></script>
+        <title>Products Edit</title> -->
+    </head>
+    <body>
+        <header>
+            <%- include("./partials/header") %> 
+        </header>
+
+        <main>
+            <h1 class="h1-products-edit">Editar Producto</h1>
+    
+            <form action="/products/edit/<%= product.id %>?_method=PUT " method="POST" enctype="multipart/form-data">
+    
+                <div class="label-tipo-vehículo">
+                    <label for="">Nombre del Vehículo</label>
+                </div>
+                <div class="div-products-edit">
+                    <input class="input-products-edit" type="text" name="name" id="" value="<%= product.name %>">
+                </div>
+    
+    
+                <div class="label-tipo-vehículo">
+                    <label for="">Tipo de vehículo</label>
+                </div>
+                <div class="div-products-edit">
+                    <select class= "elegí-vehículo" name="type" id="">
+                        <option value="">Elegir tipo de vehículo</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="Coupé">Coupé</option>
+                        <option value="Pick-up">Pick-up</option>
+                    </select>
+                </div>
+            
+                <div class="label-tipo-vehículo">
+                    <label for="">Modelo</label>
+                </div>
+                <div class="div-products-edit">
+                    <input class="input-products-edit" type="number" name="model" id="" value="<%= product.model %>">
+                </div>
+    
+    
+                <div class="label-tipo-vehículo">
+                    <label for="">Categoría</label>
+                </div>
+                <div class="div-products-edit">
+                    <select class= "elegí-vehículo" name="category" id="category" value="<%= product.category %>">
+                        <option value="">Elegir categoría</option>
+                        <option value="En Oferta">En oferta</option>
+                        <option value="Ultimos agregados">Ultimos agregados</option>
+                    </select>
+                </div>
+                
+                <div class="label-tipo-vehículo">
+                    <label for="">Precio</label>
+                </div>
+                <div class="div-products-edit">
+                    <input class="input-products-edit" type="text" name="price" id="" value="<%= product.price %>">
+                </div>
+                
+                <div class="label-tipo-vehículo">
+                    <label for="image">Cargar imágen</label>
+                </div>
+                <div class="div-products-edit div-file">
+                    <input class="input-products-edit" type="file" name="image" id="image" value="<%= product.image %>">
+                </div>
+    
+    
+                <div class="div-products-edit">
+                    <button class="boton-crear button-products-edit" type="submit">Modificar</button>
+                </div>
+            </form>
+        </main>
+        <footer class="footer-products-edit">
+            <%- include("./partials/footer") %>
+        </footer>
+    </body>
+    
+</html>

@@ -1,0 +1,90 @@
+.h1-products-create {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.div-products-create {
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.button-products-create {
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.button-products-create:hover {
+    background-color: black; 
+}
+
+.input-products-create {
+    width: 60%;
+    height: 25px;
+    border: solid 2px black;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.label-products-create {
+    text-align: center;
+    margin-bottom: 0.1%;
+}
+
+.select-categoria-pc {
+    width: 60%;
+    height: 25px;
+    border: solid 2px black;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.body-products-create {
+    background-color: lightgrey;
+}
+
+.footer-products-create {
+    margin-top: 17%;
+}
+
+
+/* **********Media Query Tablet************ */
+
+@media (min-width: 426px) {
+    .input-products-create {
+        width: 45%;
+    }
+
+    .button-products-create {
+        width: 45%;
+    }
+
+    
+    .select-categoria-pc {
+    width: 45%;
+    }
+
+}
+ 
+/* **********Media Query Desktop************ */
+
+@media (min-width: 769px) {
+    .input-products-create {
+        width: 30%;
+    }
+
+    .button-products-create {
+        width: 30%;
+    }
+
+    .select-categoria-pc {
+        width: 30%;
+    }
+
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <%- include("./partials/head") %> 
+        
+       <!--  <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/CSS/index.css">
+        <link rel="stylesheet" href="/CSS/normailize.css">
+        <link rel="stylesheet" href="/CSS/login.css">
+        <title>Login</title>
+        <script src="https://kit.fontawesome.com/51cbd52192.js" crossorigin="anonymous"></script>
+    </head> -->
+    <body class="body-login">
+        <header>
+            <%- include("./partials/header") %> 
+        </header>
+
+        <main>
+            <h1 class="h1-login">Login</h1>
+            
+            <form action="/users/login" method="POST">
+    
+                <div class="div-inputs-login">
+                    <input class="input-login" type="email" name="email" id="email" placeholder="Email">
+                </div>
+    
+                <div class="div-inputs-login">
+                    <input class="input-login" type="password" name="password" id="" placeholder="Password">
+                </div>
+              
+    
+                <div class="div-inputs-login">
+                    <button class="button-login" type="submit">Ingresar</button>
+                </div>   
+            </form>
+        </main>
+
+        <footer class="footer-login">
+            <%- include("./partials/footer") %>
+        </footer>
+    </body>
+</html>

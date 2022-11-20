@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <%- include("./partials/head") %> 
+
+        <!-- <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link rel="stylesheet" href="/CSS/index.css">
+        <link rel="stylesheet" href="/CSS/normailize.css">
+        <link rel="stylesheet" href="/CSS/register.css">
+        <script src="https://kit.fontawesome.com/51cbd52192.js" crossorigin="anonymous"></script> -->
+    </head>
+
+    <body class="body-register">
+        <header>
+            <%- include("./partials/header") %> 
+        </header>
+
+        <main>   
+            <h1 class="h1-register">Registrate</h1>
+    
+            <form action="/users/register" method="POST" enctype="multipart/form-data">
+                <div class="label-register">
+                    <label for="">Nombre</label>
+                </div>
+                <div class="div-inputs-register">
+                    <input class="input-register" type="text" name="firstName" id="">
+                </div>
+                
+                <div class="label-register">
+                    <label for="">Apellido</label>
+                </div>
+                <div class="div-inputs-register">
+                    <input class="input-register" type="text" name="lastName" id="">
+                </div>
+                
+                <div class="label-register">
+                    <label for="">Nombre de Usuario</label>
+                </div>
+                <div class="div-inputs-register">
+                    <input class="input-register" type="text" name="nickname" id="">
+                </div>
+                
+                <div class="label-register">
+                    <label for="">Fecha de Nacimiento</label>
+                </div>
+                <div class="div-inputs-register">
+                    <input class="input-register" type="date" name="birthday" id="birthdate">
+                </div>
+                
+                <div class="label-register">
+                    <label for="">Perfil de usuario</label>
+                </div>
+                <div class="div-inputs-register">
+                    <select class= "perfil-usuario input-register" name="userProfile" id="">
+                        <option value="">Elegí Perfil de Usuario</option>
+                        <option value="Comprador">Comprador</option>
+                        <option value="Vendedor">Vendedor</option>
+                    </select>
+                </div>
+                
+                <div class="label-register">
+                    <label for="">Email</label>
+                </div>
+                <div class="div-inputs-register">
+                    <input class="input-register" type="text" name="email" id="">
+                </div>
+                
+                <div class="label-register">
+                    <label for="">Contraseña</label>
+                </div>
+                <div class="div-inputs-register">
+                    <input class="input-register" type="password" name="password" id="">
+                </div>
+                
+                <div class="label-register">
+                    <label for="">Confirmar contraseña</label>
+                </div>
+                <div class="div-inputs-register">
+                    <input class="input-register" type="password" name="password2" id="">
+                </div>
+
+                <div class="label-register">
+                    <label for="">Cargar foto de usuario</label>
+                </div>
+                <div class="div-inputs-register">
+                    <input class="input-register" type="file" name="avatar" id="">
+                </div>
+                    
+                <div class="div-inputs-register">
+                    <button class="button-register" type="submit">Enviar</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <%- include("./partials/footer") %>
+        </footer>
+    </body>
+</html>

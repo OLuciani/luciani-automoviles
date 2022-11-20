@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <%- include("./partials/head") %> 
+        
+       <!--  <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Listado de Productos</title>
+        <link rel="stylesheet" href="/CSS/index.css">
+        <link rel="stylesheet" href="/CSS/normailize.css">
+        <link rel="stylesheet" href="/CSS/productsList.css">
+        <script src="https://kit.fontawesome.com/51cbd52192.js" crossorigin="anonymous"></script>
+    </head>  -->
+
+    <body class="body-products-list">
+        <header>
+            <%- include("./partials/header") %> 
+        </header>
+
+        <main>
+            <h1 class="h1-products-list">Listado de Automóviles</h1>
+    
+            <section class="main-products-list">
+                <% products.forEach(product => { %>
+                    <div class="caja-products-list">
+                        <a class="a-products-list" href="/products/detail/<%= product.id %> ">
+                            <div>
+                                <img src="/IMG/imgProducts/<%= product.image %> " alt="Foto">
+                            </div>
+                
+                            <div>
+                                <p><%= product.name %></p>
+                            </div
+                
+                            <div>
+                                <p>U$S <%= product.price %></p>
+                            </div>
+                        </a>
+                    </div>
+                <% }) %>
+            </section>
+        </main>
+        
+        <footer>
+            <%- include("./partials/footer") %>
+        </footer>
+    </body>
+</html>

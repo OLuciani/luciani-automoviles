@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <%- include("./partials/head") %> 
+        
+        <!-- <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products</title>
+        <link rel="stylesheet" href="/CSS/index.css">
+        <link rel="stylesheet" href="/CSS/normailize.css">
+        <link rel="stylesheet" href="/CSS/productsCreate.css">
+        <script src="https://kit.fontawesome.com/51cbd52192.js" crossorigin="anonymous"></script> -->
+
+    </head>
+
+    <body class="body-products-create">
+        <header>
+            <%- include("./partials/header") %> 
+        </header>
+
+        <main>
+
+            <h1 class="h1-products-create">Crear Poducto</h1>
+            
+                <form action="/products/create" method="POST" enctype="multipart/form-data">
+    
+                    <div class="label-products-create">
+                        <label for="">Nombre del Vehículo</label>
+                    </div>
+                    <div class="div-products-create">
+                        <input class="input-products-create" type="text" name="name" id="">
+                    </div>
+    
+    
+                    <div class="label-products-create">
+                        <label for="">Tipo de vehículo</label>
+                    </div>
+                    <div class="div-products-create">
+                        <select class= "elegí-vehículo" name="type" id="">
+                            <option value="">Elegir tipo de vehículo</option>
+                            <option value="Sedan">Sedan</option>
+                            <option value="Coupé">Coupé</option>
+                            <option value="Pick-up">Pick-up</option>
+                        </select>
+                    </div>
+                
+                    <div class="label-products-create">
+                        <label for="">Modelo</label>
+                    </div>
+                    <div class="div-products-create">
+                        <input class="input-products-create" type="number" name="model" id="">
+                    </div>
+    
+    
+                    <div class="label-products-create">
+                        <label for="">Categoría</label>
+                    </div>
+                    <div class="div-products-create">
+                        <select class= "select-categoria-pc" name="category" id="">
+                            <option value="">Elegir Categoría</option>
+                            <option value="En Oferta">En oferta</option>
+                            <option value="Ultimos agregados">Ultimos agregados</option>
+                        </select>
+                    </div>
+                    
+                    <div class="label-products-create">
+                        <label for="">Precio</label>
+                    </div>
+                    <div class="div-products-create">
+                        <input class="input-products-create" type="text" name="price" id="">
+                    </div>
+                    
+                    <div class="label-products-create">
+                        <label for="">Cargar imágen</label>
+                    </div>
+                    <div class="div-products-create div-file">
+                        <input class="input-products-create" type="file" name="image" id="">
+                    </div>
+    
+    
+                    <div class="div-products-create">
+                        <button class="button-products-create" type="submit">Crear</button>
+                    </div>
+                </form>
+        </main>
+
+        <footer class="footer-products-create">
+            <%- include("./partials/footer") %>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+[
+ {
+  "id": 1,
+  "image": "Ferrari2.jpg",
+  "name": "Ferrari",
+  "price": "450000"
+ },
+ {
+  "id": 2,
+  "image": "Fiat 600.jpg",
+  "name": "Fiat 600",
+  "price": "1000"
+ },
+ {
+  "id": 3,
+  "image": "Ferrari3.jpg",
+  "name": "Ferrari Testa Rosa",
+  "price": "600000"
+ },
+ {
+  "id": 4,
+  "image": "file-1663365800271.jpg",
+  "name": "Alfa Romeo Monza",
+  "price": "200000"
+ },
+ {
+  "id": 7,
+  "image": "file-1663479523636.jpg",
+  "name": "Renault 4",
+  "price": "3000"
+ },
+ {
+  "id": 8,
+  "image": "file-1663479594058.jpg",
+  "name": "Lamborghini",
+  "price": "380000"
+ },
+ {
+  "id": 9,
+  "image": "file-1663695376316.jpg",
+  "name": "BMW Z3",
+  "price": "100000"
+ },
+ {
+  "id": 10,
+  "image": "file-1663696672622.jpg",
+  "name": "Mercedes Benz Clase C Coupé",
+  "price": "75000"
+ },
+ {
+  "id": 11,
+  "name": "Honda Civic SI",
+  "type": "Sedan",
+  "model": "2022",
+  "category": "Ultimos agregados",
+  "price": "45000",
+  "image": "file-1663989639731.jpg"
+ },
+ {
+  "id": 12,
+  "name": "Ferrari SF90",
+  "type": "Coupé",
+  "model": "2022",
+  "category": "Ultimos agregados",
+  "price": "550000",
+  "image": "file-1663991408051.jpg"
+ }
+]

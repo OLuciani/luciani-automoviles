@@ -1,0 +1,83 @@
+.h1-register {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.label-register {
+    text-align: center;
+    margin-bottom: 0.1%;
+}
+
+.div-inputs-register {
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.button-register {
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;   
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.button-register:hover {  
+    background-color: black; 
+}
+
+.input-register {
+    width: 60%;
+    height: 25px;
+    border: solid 2px black;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+} 
+
+.perfil-usuario {
+    width: 60%;
+    height: 25px;
+    border: solid 2px black;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}  
+
+.body-register {
+    background-color: lightgrey;
+}
+
+/* **********Media Query Tablet************ */
+
+@media (min-width: 426px) {
+    .input-register {
+        width: 45%;
+    }
+
+    .perfil-usuario {
+        width:45%;
+    }
+
+    .button-register {
+        width: 45%;
+    }
+}
+ 
+/* **********Media Query Desktop************ */
+
+@media (min-width: 769px) {
+    .input-register {
+        width: 30%;
+    }
+
+    .perfil-usuario {
+        width:30%;
+    }
+
+    .button-register {
+        width: 30%;
+    }
+}
+

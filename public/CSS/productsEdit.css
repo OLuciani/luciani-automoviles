@@ -1,0 +1,88 @@
+.h1-products-edit {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.div-products-edit {
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.button-products-edit {
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.button-products-edit:hover {
+    background-color: black;
+}
+
+.input-products-edit {
+    width: 60%;
+    height: 25px;
+    border: solid 2px black;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.label-tipo-vehículo {
+    text-align: center;
+    margin-bottom: 0.1%;
+   /*  font-size: 16px; */
+}
+
+.elegí-vehículo {
+    width: 60%;
+    height: 25px;
+    border: solid 2px black;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.footer-products-edit {
+  margin-top: 17%;
+}
+
+/* **********Media Query Tablet************ */
+
+@media (min-width: 426px) {
+    .input-products-edit {
+        width: 45%;
+    }
+
+    .button-products-edit {
+        width: 45%;
+    }
+
+    
+    .elegí-vehículo {
+        width: 45%;
+    }
+}
+ 
+/* **********Media Query Desktop************ */
+
+@media (min-width: 769px) {
+    .input-products-edit {
+        width: 30%;
+    }
+
+    .button-products-edit {
+        width: 30%;
+    }
+
+    .elegí-vehículo {
+        width: 30%;
+    }
+}

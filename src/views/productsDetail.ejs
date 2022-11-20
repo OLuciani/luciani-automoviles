@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <%- include("./partials/head") %> 
+        
+        <!-- <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Poducts Edit</title>
+        <link rel="stylesheet" href="/CSS/index.css">
+        <link rel="stylesheet" href="/CSS/normailize.css">
+        <link rel="stylesheet" href="/CSS/productsDetail.css">
+        <script src="https://kit.fontawesome.com/51cbd52192.js" crossorigin="anonymous"></script>
+ -->
+    </head>
+
+    <body>
+        <header>
+            <%- include("./partials/header") %> 
+        </header>
+
+        <main>
+            <h1 class="h1-products-detail">Detalle del Producto</h1>
+    
+            <section class="caja-products-detail">
+                    <div>
+                        <img src="/IMG/imgProducts/<%= product.image %> " alt="Foto">
+                    </div>
+    
+                    <div>
+                        <p><%= product.name %></p>
+                    </div>
+    
+                    <div>
+                        <p>U$S <%= product.price %></p>
+                    </div>
+            </section>
+            
+            <div class="div-boton-editar-detail">
+                <a href="/products/edit/<%= product.id %> "><button class="boton-editar-detail">Editar</button></a>
+            </div>
+    
+            <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
+                <div class="div-boton-eliminar-detail">
+                    <button class="boton-eliminar-detail" type="submit">Eliminar</button>
+                </div>
+            </form>
+        </main>
+
+        <footer class="footer-products-detail">
+            <%- include("./partials/footer") %>
+        </footer>
+    </body>
+</html>

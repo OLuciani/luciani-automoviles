@@ -1,0 +1,61 @@
+[
+ {
+  "id": 1,
+  "firstName": "Claudio",
+  "lastName": "Luciani",
+  "email": "cavito@hotmail.com",
+  "password": 1234
+ },
+ {
+  "id": 2,
+  "firstName": "Juan",
+  "lastName": "Hernandez",
+  "email": "Juancho@hotmail.com",
+  "password": 1243
+ },
+ {
+  "id": 3,
+  "firstName": "Claudia",
+  "lastName": "Gaitan",
+  "email": "claudia@hotmail.com",
+  "password": 1234
+ },
+ {
+  "id": 4,
+  "firstName": "Titan",
+  "lastName": "Luciani",
+  "email": "pichu@gmail.com",
+  "password": "9876"
+ },
+ {
+  "id": 5,
+  "firstName": "Daniel",
+  "lastName": "Heredia",
+  "nickname": "Dani",
+  "birthday": "2022-09-03",
+  "email": "daniel@hotmail.com",
+  "password": "123",
+  "avatar": "Foto perfil.jpeg"
+ },
+ {
+  "id": 6,
+  "firstName": "María Esther ",
+  "lastName": "Charriol",
+  "nickname": "Nenucha",
+  "birthday": "2022-09-10",
+  "email": "nenucha@hotmail.com",
+  "password": "123",
+  "avatar": "file-1663865721113.jpeg"
+ },
+ {
+  "id": 7,
+  "firstName": "Oscar Miguel",
+  "lastName": "Luciani",
+  "nickname": "Oscar",
+  "birthday": "1965-12-06",
+  "userProfile": "Vendedor",
+  "email": "oluciani@hotmail.es",
+  "password": "12345678",
+  "avatar": "file-1665178728469.jpeg"
+ }
+]

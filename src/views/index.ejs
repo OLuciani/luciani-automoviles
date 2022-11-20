@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <%- include("./partials/head") %> 
+
+        <!-- <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luciani Automoviles</title>
+        <link rel="stylesheet" href="/CSS/index.css">
+        <link rel="stylesheet" href="/CSS/normailize.css">
+        <script src="https://kit.fontawesome.com/51cbd52192.js" crossorigin="anonymous"></script> -->
+
+    </head> 
+
+    <body class="body-index">
+        <header>
+            <%- include("./partials/header") %> 
+        </header>
+        
+    <!--     <header>
+            <section>
+                <div class="caja1">             
+                    <img class="logo" src="/IMG/Logo Auto.png" alt="">
+
+                    <span class="nombre-empresa">LUCIANI<br>AUTOMOVILES</span>
+                    
+                
+                        <input class="campo-de-busqueda" type="text" name="barra-de-busqueda" id="" >
+                        
+                    <i class="fa-solid fa-magnifying-glass lupa"></i> 
+                            
+                
+                </div>
+
+                <div>
+                    <nav class="caja2">
+                        <a class="" href="/products">Productos</a>
+
+                        <a href="/products/create">Crear Producto</a>
+
+                        <a href="/users/register">Registrate</a>
+
+                        <a href="">Login</a>
+
+                    </nav>
+                </div>
+
+            </section>
+        </header> -->
+
+        <main>
+            <h1 class="h1-index"><%= empresa %> </h1>
+        
+            <div class="div-imagen-body">
+                <img class="imagen-body"src="/IMG/Ferrari.jpg" alt="">
+            </div>
+        
+            <br> 
+
+            <h2>Ofertas</h2>
+
+            <div class="div-imagen-body">
+                <img class="imagen-body"src="/IMG/imgOfertas/Peugeot RCZ R.jpg" alt="">
+            </div>
+
+            <div class="div-imagen-body">
+                <img class="imagen-body"src="/IMG/imgOfertas/Audi A3 Sedan.jpg" alt="">
+            </div>
+        
+            <div class= "div-listado-usuarios">
+                <a href="/users/list">Listado de Usuarios</a>
+            </div>
+        </main>
+
+        <footer>
+            <%- include("./partials/footer") %>
+        </footer>
+    </body>
+</html>

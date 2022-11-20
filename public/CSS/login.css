@@ -1,0 +1,70 @@
+.h1-login {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.div-inputs-login {
+    margin-bottom: 3%;
+    text-align: center;
+
+}
+
+.button-login {
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 12%;
+    box-sizing: border-box;
+}
+
+.button-login:hover {
+    background-color: black; 
+}
+
+.input-login {
+    width: 60%;
+    height: 25px;
+    border: solid 2px black;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.body-login {
+    background-color: lightgrey;
+}
+
+.footer-login {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} 
+
+
+/* **********Media Query Tablet************ */
+
+@media (min-width: 426px) {
+    .input-login {
+        width: 45%;
+    }
+
+    .button-login {
+        width: 45%;
+    }
+}
+ 
+/* **********Media Query Desktop************ */
+
+@media (min-width: 769px) {
+    .input-login {
+        width: 30%;
+    }
+
+    .button-login {
+        width: 30%;
+    }
+}
+

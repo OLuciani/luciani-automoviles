@@ -1,0 +1,208 @@
+/* *********HEADER********** */
+header {
+    background-color: black; 
+ box-sizing: border-box; 
+}
+ 
+.caja1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-sizing: border-box;
+    position: relative; 
+}
+
+.logo {
+    width: 7%;
+}
+
+.logo:hover {
+    transform: rotate(-90deg);
+    transition-duration: 4s;
+}
+
+.nombre-empresa {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vw;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+
+.campo-de-busqueda {
+   display: block;
+   width: 30%; 
+   height: 5vw; 
+   border-radius: 7px;
+    
+}
+/* El icono de la lupa funciona como si fuera tipografia, por eso le aplico font-size para
+cambiar el tamaño. Y lo pongo en vw al igual que el alto del input del campo de búqueda. 
+Debo poner position relative en el contenedor y position absoluta en la lupa, y darle 
+ubicación con right y top. */
+.lupa {
+    display: block; 
+    position: absolute;
+    right: 8%;
+    top: 40%;
+    font-size: 2.5vw;
+}
+
+.caja2 {
+    display: none;
+}
+
+.icono-burger { 
+    border-radius: 5px;
+    border: solid 2px white;
+    color: white;
+    font-size: 1em;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+} 
+
+.div-icono-burger{
+    width: 1em;
+    margin: auto; 
+} 
+
+.sidebar {
+    width: 50vw;
+    height: 100vh;
+    background-color: lightgrey;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 15%;
+    padding-left: 10%;
+    font-size: 18px;
+    border-left: solid black 1px;
+    box-sizing: border-box;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar {
+    display: none;
+} 
+
+
+.div-icono-burger:hover .sidebar {
+display: block;
+}
+
+.item-sidebar {
+    padding-bottom: 20px;
+}
+  
+   
+
+/* ********** MAIN ************** */
+
+.h1-index {
+    text-align: center;
+}
+
+.body-index {
+    background-color: lightgray;
+}
+
+
+
+.div-imagen-body {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.imagen-body {
+    width: 50%;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.div-listado-usuarios {
+   text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    margin-top: 1vw;
+    
+}
+
+@media (min-width: 426px) {
+    .campo-de-busqueda {
+        display: block;
+        width: 18%; 
+        height: 3vw; 
+        border-radius: 7px;
+     }
+
+    .lupa {
+        display: block; 
+        position: absolute;
+        right:9.5%;
+        top: 46%;
+        font-size: 1.2vw;
+    } 
+
+    .caja2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        box-sizing: border-box;
+    } 
+    
+      .caja2 a {
+        text-decoration: none;
+        font-size: 16px;
+    } 
+
+    .div-hipervinculo {
+        box-sizing: border-box;
+    }
+
+    .hipervínculo-header {
+        color: white;
+    }
+
+    .hipervínculo-header:hover {
+           background-color: white;
+           color:  black;
+           padding: 4px; 
+           border-radius: 4px;
+           transition-duration: 0.5s;
+           box-sizing: border-box;
+       }
+
+    .icono-burger{ 
+        display: none;
+    } 
+    
+    .div-icono-burger{
+        display: none;
+    } 
+}
